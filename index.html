@@ -8,7 +8,8 @@
         crossorigin=""></script>
         <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
         <style>
-            #mymap { height: 50%; }
+            #mymap { height: 50%; 
+                     width: 50%}
         </style>
     </head>
     <body>
@@ -20,7 +21,7 @@
                 /* Center: Aachen, Germany */
                 center: new L.LatLng(50.77664, 6.08342),
          
-                zoom: 10
+                zoom: 18
             });
             map.addLayer(layer);
               L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
