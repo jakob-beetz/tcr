@@ -15,13 +15,17 @@
         <div id="mymap"></div>
         <script type="text/javascript">
             var layer = new L.StamenTileLayer("terrain");
+          
             var map = new L.Map("mymap", {
-                /* Center: Munich, Germany */
+                /* Center: Aachen, Germany */
                 center: new L.LatLng(50.77664, 6.08342),
-                /* Show most of western Europe */
+         
                 zoom: 10
             });
             map.addLayer(layer);
+              L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
         </script>
     </body>
 </html>
